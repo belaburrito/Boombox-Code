@@ -1,0 +1,351 @@
+/*
+Theme Name: Collision
+Version: 1.0.0
+Text Domain: Collision
+Description: Custom theme for collisionstudios.com
+Author: Bela Kochkarova
+Author URI: http://belaburrito.github.io
+*/
+
+/* 
+Lighter Blue: 2088d4
+Darker blue: 002846
+White: ffffff
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: black;
+    overflow: visible;
+}
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+.border-test{
+    border: solid 2px red;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+/*nav*/
+
+
+.nav{
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,0,0,0.9) 98%);
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.p-0{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav-item{
+    padding: 0px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.nav-social a{
+    color: white;
+    padding: 0px 10px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.w-100 {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+
+/*hero*/
+.hero{
+    background-image:url('img/hero/banner_focus2.png');
+    background-position: bottom;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -20;
+
+   /* display: flex;
+    align-items: center;
+    padding-bottom: 40%;*/
+}
+
+.hero-logo{
+    width: 400px;
+    padding-left: 100px;
+    position: relative;
+    top: 150px;
+    left: 0;
+}
+
+.hero-logo img{
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+
+    .hero-logo{
+        top: 150px;
+        width: 80%;
+    }
+
+    .hero{
+        background-position: revert;
+    }
+
+}
+
+/*about us*/
+
+.about-inner{
+    width: 60%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.about h1{
+    color: #2088d4;
+    font-weight: bolder;
+}
+
+.about p{
+    color: black;
+    font-weight: bolder;
+}
+
+/*services*/
+.services{
+    background: #2088d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient{
+    width: 100%;
+    height: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6024910208223915) 0%, rgba(0,0,0,0) 85%);
+    margin-top: -50px;
+}
+
+.services-inner{
+    width: 60%;
+}
+
+.services-inner p{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.services-img{
+    width: 150px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.services-img img{
+    width: 100%;
+}
+
+.services-header{
+    display: flex;
+}
+
+.services-header h1, .services-header p{
+    color: white;
+    font-weight: bolder;
+}
+
+.services-header h1{
+    text-align: right;
+}
+
+.services-header p{
+    text-align: left;
+}
+
+.service-card{
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 350px;
+}
+
+.service-card p{
+    color: #002846;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.service-card img{
+    width: 100px;
+}
+
+
+
+@media (max-width: 768px){
+    .service-card{
+        margin: 10px;
+    }
+    .services-header h1{
+        text-align: center;
+    }
+    
+    .services-header p{
+        text-align: center;
+    }
+}
+
+.vid{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*footer*/
+.footer{
+    background:#002846;
+    padding: 30px 0px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav a{
+    color: white;
+    
+    padding: 20px 30px;
+}
+
+.footer-social a{
+    color: white;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.footer-desc p{
+    color: white;
+}
+
+/*expect*/
+
+.expect{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.expect-inner{
+    width: 60%;
+}
+
+.expect-icons .col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.expect-icons h1{
+    text-align: center;
+}
+.expect img{
+    width: 100%;
+}
+
+.expect-icons-three .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expect-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.expect h1{
+    font-weight: bolder;
+    color: #2088d4;
+}
+
+.expect p{
+    font-weight: bolder;
+}
+
+.howtocard{
+    background: #2088d4;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+    padding: 20px 10px 0px 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.howtocard p{
+    color: white;
+    overflow: hidden;
+}
+
+.howtocard img{
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.diag{
+    margin-bottom: -250px;
+}
+
+@media (max-width: 768px) {
+    .howto .row{
+        justify-content: center;
+    }
+}
