@@ -1,0 +1,503 @@
+/*
+Theme Name: Relativity
+Version: 1.0.0
+Text Domain: Relativity
+Description: Custom theme for Relativity
+Author: Bela Kochkarova
+Author URI: http://belaburrito.github.io
+*/
+
+/*
+Light Blue: 3e96f7
+Medium Blue: 2b61ba
+Dark blue: 0b226b
+White: ffffff
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{    
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+
+.navbar, .nav{    
+    background-color: white;
+}
+
+.navbar a{
+    color: #0b226b;
+}
+
+
+
+li.nav-item.active{
+    border-top: solid 2px #2b61ba;
+}
+
+@media (min-width: 768px){
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        display:flex;
+        justify-content: center;
+    }
+}
+
+/**********************************/
+/*********** Hero CSS **********/
+/**********************************/
+
+.hero{
+    background-image: url('../img/logo/relativitystudioslogo.png');
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.hero-asset1{
+    position: absolute;
+    width: 40%;
+    left: -25%;
+}
+
+.hero-asset2{
+    position: absolute;
+    width: 40%;
+    right: -25%;
+    transform: scaleX(-1);
+}
+
+@media (max-width: 768px){
+    .hero{
+        background-size: 80%;
+    }
+
+    .hero-asset1, .hero-asset2{
+        display: none;
+    }
+}
+
+/**********************************/
+/*********** Our Games CSS **********/
+/**********************************/
+.games h1{
+    text-transform: uppercase;
+    color: #0b226b;
+    text-align: center;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-wrapper{
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    margin: 10px;
+}
+
+.carousel-wrapper img{
+    width: fit-content;
+    height: 400px;
+    overflow-y: hidden;
+}
+
+@media (max-width: 768px){
+    .games{
+        display: none;
+    }
+}
+
+
+/**********************************/
+/*********** About CSS **********/
+/**********************************/
+
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.about-content h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-content p{
+    color: white;
+}
+
+.about-content{
+    background-color:#2b61ba;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stack-container{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    
+    overflow: visible !important;
+}
+
+.light-about{
+    background-color:#3e96f7;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    margin: -100px;
+
+}
+
+.dark-about{
+    background-color:#0b226b;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    margin: 100px;
+}
+
+
+/**********************************/
+/*********** Featured Games CSS **********/
+/**********************************/
+
+.feature-hero{   
+    height: 100vh; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#ice-cream-hero{ 
+    background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Purple7/v4/23/e0/93/23e09303-671d-3f38-f983-a23251f543d5/pr_source.jpg/643x0w.jpg');
+}
+
+.mobile-hero{
+    display:none;
+}
+
+.feature-overview{
+    height: 100vh;    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.game-icon{
+    width: 90px;
+    
+    box-shadow: 5px 5px 30px grey;
+}
+
+.game-icon img{
+    width: 100%;
+}
+
+#ice-cream-overview{
+    background: url('../img/feature/icecreambg.png') rgba(0, 8, 255, 0.51);
+    background-blend-mode:soft-light;
+}
+
+.title-card{
+    width: 700px;
+    height: 100%;
+    background:url('../img/feature/bluecorner.png');
+    background-repeat: no-repeat;
+    padding: 50px;
+    background-position: top left;
+    background-size: 100%;
+    color: white;
+}
+
+.overview-card{
+    padding: 10px 180px 0px 220px;
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    background:url('../img/feature/whitecorner.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    color: #0b226b;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 0px;
+    bottom: 0px;
+}
+
+#duck-hero{
+    background-image: url('../img/feature/duckhunt.png');
+}
+
+
+#duck-overview{
+    background: url('../img/feature/duckhuntbg.jpg') rgba(0, 8, 255, 0.51);
+    background-blend-mode:soft-light;
+    background-size: cover;
+}
+
+#duck-overview .title-card{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 0px;
+    background:url('../img/feature/bluecornerflipped.png');
+    width: 700px;
+    background-size: auto 100%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0;
+    padding-top: 20px;
+
+}
+
+.title-wrapper{
+    width: 250px;
+}
+
+#duck-overview .overview-card{
+    left: 0px;
+    background:url('../img/feature/whitecornerflipped.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 700px;
+    height: 700px;
+    background-size: 100%;
+    padding: 0px 150px 50px 120px;
+}
+
+@media (max-width: 768px){
+    .mobile-hero{
+        display: block;
+        width: 100%;
+    }
+
+    .feature-hero{
+        background:none;
+        height: auto;
+    }
+
+    .feature-overview{
+        height:auto;
+    }
+
+    .overview-card, .title-card, #duck-overview .overview-card, #duck-overview .title-card{
+        background:unset;
+        padding: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .title-wrapper{
+        width: auto;
+    }
+
+    .title-card, .overview-card{
+        background:#3e96f7;
+        margin: auto;
+    }
+
+    .overview-card{
+        background: white;
+        position: unset;
+    }
+
+    #duck-overview .overview-card{        
+        background:white;
+        margin: auto;
+    }
+
+    #duck-overview .title-card{
+        background:#3e96f7;
+        position: unset;
+    }
+}
+
+/**********************************/
+/*********** Contact CSS **********/
+/**********************************/
+.contact{
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card{
+    width: 80%;
+    height: 600px;
+    background: url('../img/contact/section.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+}
+
+.contact-one{
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+}
+
+.contact-one h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+.contact-one img{
+    width: 50%;
+}
+
+.contact-two{
+    width: 50%;
+    color: white;
+    padding: 70px 50px;
+}
+
+.contact-two h1{
+    display: none;
+}
+
+
+@media (max-width: 768px){
+    .contact-one{
+        display:none;
+    }
+    .contact-two h1{
+        text-align: center;
+        display: inline-block;
+    }
+
+    .contact-two{
+        width: 100%;
+    }
+
+    .contact-card{
+        width: 100%;
+        border-radius: 0px;
+        background:#2b61ba;
+        background-image:unset;
+    }
+
+    .contact{
+        height:auto;
+    }
+}
+
+/**********************************/
+/*********** Footer CSS **********/
+/**********************************/
+
+.social{
+    background:#0b226b;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size:2em;
+}
+
+.social a{
+    color: white;
+}
+
+.social>*{
+    padding: 10px 20px 0px 20px;
+}
+
+.content{
+    background:#3e96f7;
+    color:#0b226b;
+    padding: 50px;
+    display: flex;
+
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+}
+
+.links a{
+    color:#0b226b;
+}
+
+.text{
+    justify-content: center;
+    padding: 0px 50px;
+    
+    width: 50%;
+}
+
+@media (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+
+    .links, .text{
+        width: 90%;
+        padding: 20px 0px;
+        text-align: center;
+    }
+}

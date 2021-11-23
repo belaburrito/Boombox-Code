@@ -1,0 +1,392 @@
+/*
+Theme Name: 30Parallel
+Version: 1.0.0
+Text Domain: 30Parallel
+Description: Custom theme for 30parallelgames.com
+Author: Bela Kochkarova
+Author URI: http://belaburrito.github.io
+*/
+
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+
+@font-face {
+    font-family: Futura;
+    src: url('site-template/assets/FuturaMedium.otf');
+}
+
+body{
+    font-family: 'Futura', sans-serif;
+    color: white;
+    background: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.splash-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://30parallelgames.com/wp-content/uploads/2020/12/imgpsh_fullsize_anim1920x1080.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 0 100em rgb(0, 0, 0, 0.5) inset;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-page .row{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+}
+
+.splash-page .col{
+    display: flex;
+    justify-content: center;
+}
+
+.splash-page .col img{
+    width: 100%;
+}
+
+.col-button{
+    margin-top: 10px;
+}
+
+.splash-button, .buy-button a, .buy-button:active, .buy-button:visited, .buy-button:link, button.buy-button{
+    background: #e9c146;
+    font-family: 'Futura', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    font-weight: bolder;
+    width: 100px;
+    padding: 5px;
+}
+
+@media (max-width: 992px) {
+    .splash-page .row{
+        width: 80%;
+    }
+}
+
+.border-divider{
+    width: 800px;
+    margin: auto;
+    padding: 20px 0px;
+    position: relative;
+    z-index: 100;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.border-divider img{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .border-divider{
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px){
+}
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    background: black;
+    color: white;
+    padding: 20px 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+a.nav-link, a.nav-link:hover{
+    color: white;
+}
+
+@media (max-width: 767px){
+    .navbar .buy-button{
+        display: none;
+    }
+
+    .navbar{
+        padding: 20px 20px;
+    }
+}
+
+/**********************************/
+/*********** Hero CSS **********/
+/**********************************/
+.hero{
+    height: 100vh;
+    background: url('https://30parallelgames.com/wp-content/uploads/2021/08/FPO1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .row{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+/*
+.hero .row>*{
+    padding: 5px 0px;
+}
+*/
+.hero h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+@media (max-width: 576px){
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 150vh;
+    }
+
+    .hero .buy-button{
+        width: 100%;
+    }
+}
+
+/**********************************/
+/*********** Who CSS **********/
+/**********************************/
+
+.col-md-6 img, .col-sm-12 img{
+    width: 100%;
+}
+
+.border-test{
+    border: solid 2px red;
+}
+
+.who-we-are {
+    background-color:  black;
+    background-image: url('../img/videolight.png');
+    background-blend-mode: overlay;
+    color: white;
+    text-align: right;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-games{
+    background-color: black;
+    background-image: url('../img/NicePng_pattern-png_247272.png');
+    background-blend-mode:lighten;
+    color: white;
+    padding: 0px 40px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.who .buy-button{
+    width: 150px;
+}
+
+.games-icons{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.games-icons img{
+    width: 30%;
+}
+
+.games-icons a{
+    font-size: 30px;
+    color: #e9c146;;
+}
+
+.who .row{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px){
+}
+
+@media (max-width: 767px){
+    .who .col-sm-12{
+        padding: 50px;
+    }
+
+    .who-row{
+        flex-direction: column-reverse !important;
+    }
+}
+
+/**********************************/
+/*********** Newsletter CSS **********/
+/**********************************/
+
+.newsletter-content{
+    background: black;
+    color: white;
+    padding: 20px 50px 0px 50px;
+}
+
+.newsletter-content br{
+    display: none;
+}
+
+.submit-button{
+    text-transform: uppercase;
+    width: 125px;
+    background-color: #e9c146;
+    color: black;
+    box-shadow: 0px 0px 15px black;
+    border: none;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.form-control{
+    width: 75%;
+    border: solid 2px black;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .form-control{
+        width: 100%;
+    }
+}
+
+/**********************************/
+/*********** Contact CSS **********/
+/**********************************/
+
+/*
+.contact{
+    padding-bottom: 50px;
+    background: url('../img/NicePng_pattern-png_247272.png');
+    background:red;
+
+}
+
+.contact p{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.border-contact{
+    width: 55%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.border-contact img{
+    width: 100%;
+}
+
+.contact-content{
+    width: 75%;
+}
+*/
+
+.contact{
+    text-align: center;
+}
+
+.contact-icons a{
+    font-size: 30px !important;
+    color: white !important;
+    padding: 5px 10px !important;
+    background-color: #af8e55 !important;
+    margin: 5px;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+}
+.border-contact img{
+    width: 100%;
+}
+/*
+.contact-icons>*{
+    padding: 3px 10px;
+    text-align: center;
+}
+.contact-icons{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.col-12.contact-content{
+    text-align:center;
+}*/
+
+html{
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 576px){
+    .border-contact{
+        width: 60%;
+    }
+}
+
+/*Carousel CSS*/
+.carousel{
+    padding: 0;
+}
+
+.carousel p{
+    display: none;
+}
+
+#slider_1198{
+    margin-bottom: 0 !important;
+}
+
+#slider_1198 .owl-dots{
+    bottom: 10px !important;
+}
+
+#slider_1198 .owl-dots .active span{
+    background-color: #e9c146 !important;
+}
+
+#slider_1198 .owl-dots .owl-dot span{
+    background-color: rgba(233, 193, 70, 0.5) !important; 
+}
+
+@media (max-width: 768px){
+    .carousel{
+        display: none;
+    }
+}

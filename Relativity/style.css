@@ -1,0 +1,253 @@
+/*
+Theme Name: 30Parallel
+Version: 1.0.0
+Text Domain: 30Parallel
+Description: Custom theme for 30parallelgames.com
+Author: Bela Kochkarova
+Author URI: http://belaburrito.github.io
+*/
+
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+
+@font-face {
+    font-family: Futura;
+    src: url('./assets/FuturaMedium.otf');
+}
+
+body{
+    font-family: 'Futura', sans-serif;
+    color: white;
+    background: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.splash-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://30parallelgames.com/wp-content/uploads/2020/12/imgpsh_fullsize_anim1920x1080.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 0 100em rgb(0, 0, 0, 0.5) inset;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-page .row{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+}
+
+.splash-page .col{
+    display: flex;
+    justify-content: center;
+}
+
+.splash-page .col img{
+    width: 100%;
+}
+
+.col-button{
+    margin-top: 10px;
+}
+
+.splash-button, .buy-button a, .buy-button:active, .buy-button:visited, .buy-button:link, button.buy-button{
+    background: #e9c146;
+    font-family: 'Futura', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    font-weight: bolder;
+    width: 100px;
+    padding: 5px;
+}
+
+@media (max-width: 992px) {
+    .splash-page .row{
+        width: 80%;
+    }
+}
+
+.border-divider{
+    width: 800px;
+    margin: auto;
+    padding: 20px 0px;
+    position: relative;
+    z-index: 100;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.border-divider img{
+    width: 100%;
+}
+
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    background: black;
+    color: white;
+    padding: 20px 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+a.nav-link, a.nav-link:hover{
+    color: white;
+}
+
+
+/**********************************/
+/*********** Hero CSS **********/
+/**********************************/
+.hero{
+    height: 100vh;
+    background: url('https://30parallelgames.com/wp-content/uploads/2021/08/FPO1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .row{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .row>*{
+    padding: 5px 0px;
+}
+
+.hero h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+/**********************************/
+/*********** Who CSS **********/
+/**********************************/
+
+.col-6 img{
+    width: 100%;
+}
+
+.border-test{
+    border: solid 2px red;
+}
+
+.who-we-are {
+    background-color:  white;
+    background-image: url('../img/videolight.png');
+    background-blend-mode: overlay;
+    color: black;
+    text-align: right;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-games{
+    background-color: black;
+    background-image: url('../img/NicePng_pattern-png_247272.png');
+    background-blend-mode:lighten;
+    color: white;
+    padding: 0px 40px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.who .buy-button{
+    width: 150px;
+}
+
+.games-icons{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.games-icons img{
+    width: 30%;
+}
+
+.games-icons a{
+    font-size: 30px;
+    color: #e9c146;;
+}
+
+/**********************************/
+/*********** Newsletter CSS **********/
+/**********************************/
+
+.newsletter-content{
+    background: white;
+    color: black;
+    padding: 20px 0px 50px 50px;
+}
+
+/**********************************/
+/*********** Contact CSS **********/
+/**********************************/
+
+.contact{
+    height: 100vh;
+    background: url('../img/NicePng_pattern-png_247272.png');
+
+}
+
+.border-contact{
+    width: 55%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.border-contact img{
+    width: 100%;
+}
+
+.contact-content{
+    width: 75%;
+}
+
+.contact-icons a{
+    font-size: 30px;
+    color: white;
+}
+
+.contact-icons>*{
+    padding: 5px 10px;
+    background-color: #af8e55;
+}
+
+.contact-icons:first-child{
+    padding-left: 0px;
+}
+
+html{
+    scroll-padding-top: 5rem;
+}
